@@ -13,11 +13,11 @@ def page_earthquake():
     st.header("🏗️ Simulasi Gedung Tahan Gempa")
 
     st.write("""
-    **Mengapa simulasi ini penting bagi Anda?**
+    **Mengapa simulasi ini penting bagi Kita sebagai mahasiswa Teknik Sipil Universitas Brawijaya?**
 
     Saat gempa bumi terjadi, tanah akan bergoyang ke samping. Gedung bertingkat
     harus dirancang fleksibel tetapi kokoh agar goyangan tersebut tidak
-    meruntuhkan struktur bangunan. Mari uji seberapa besar simpangan yang
+    meruntuhkan struktur bangunan. Mari kita uji seberapa besar simpangan yang
     terjadi pada struktur.
     """)
 
@@ -48,11 +48,11 @@ def page_earthquake():
             1.0, 10.0, 6.0,
             step=0.5,
             key="eq_magnitudo",
-            help="Nilai ini digunakan sebagai parameter simulasi, bukan prediksi gempa nyata."
+            help="Nilai ini kami gunakan sebagai parameter simulasi, bukan prediksi gempa nyata."
         )
 
         st.info("""
-        💡 **Info Sipil untuk Awam:**
+        💡 **Informasi Material Yang Di Pakai:**
 
         * **Beton Biasa** sangat rapuh saat menerima gaya tarik/goyangan ke samping.
         * **Beton Bertulang** menggunakan besi tulangan untuk membantu menahan gaya tarik.
@@ -133,7 +133,7 @@ def page_earthquake():
         plt.close(fig_init)
 
         status_placeholder.info(
-            "💡 Klik tombol di bawah untuk menyimulasikan getaran gempa pada gedung."
+            "Klik tombol di bawah buat menyimulasikan getaran gempa pada gedung."
         )
 
         mulai = st.button(
@@ -192,7 +192,4 @@ def page_earthquake():
                     "🏁 Simulasi selesai. Pilih parameter lain untuk mencoba skenario berbeda."
                 )
 
-# PENTING: fungsi harus benar-benar dipanggil.
-# Pada kode asli, fungsi page_earthquake() didefinisikan tetapi tidak dipanggil,
-# sehingga Streamlit tidak memiliki komponen yang perlu ditampilkan.
 page_earthquake()
