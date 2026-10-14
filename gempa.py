@@ -59,7 +59,7 @@ def page_earthquake():
         * **Peredam Goyangan** membantu menyerap energi getaran.
         """)
 
-    # Parameter simulasi mengikuti model dari kode asli.
+    # Parameter simulasi
     if material == "Beton Biasa (Tanpa Besi Tulangan)":
         damping = 0.02
         kekakuan = 15.0
