@@ -159,7 +159,7 @@ def page_earthquake():
                 plot_placeholder.pyplot(fig, clear_figure=True)
                 plt.close(fig)
 
-                # Pemeriksaan ambang sesuai logika kode asli.
+                # Pemeriksaan ambang nya harus sesuai logika kode asli yang tadi aku buat.
                 if (
                     abs(amplitude) > 6.0
                     and material == "Beton Biasa (Tanpa Besi Tulangan)"
