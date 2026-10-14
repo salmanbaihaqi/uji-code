@@ -111,7 +111,7 @@ def page_earthquake():
                     alpha=0.5
                 )
 
-            # Batas sumbu dibuat dinamis supaya gedung tetap terlihat.
+            # Batas sumbu aku buat dinamis yan biar gedung nya tetap keliatan.
             batas_x = max(15, abs(amplitude_t) + 5)
             ax.set_xlim(-batas_x, batas_x)
             ax.set_ylim(-1, (tinggi * 3) + 5)
