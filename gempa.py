@@ -62,13 +62,13 @@ def page_earthquake():
     # Parameter simulasi
     if material == "Beton Biasa (Tanpa Besi Tulangan)":
         damping = 0.02
-        kekakuan = 0.35
+        kekakuan = 10
     elif material == "Beton Bertulang (Standar Gedung Modern)":
         damping = 0.07
-        kekakuan = 0.50
+        kekakuan = 5
     else:
         damping = 0.25
-        kekakuan = 0.75
+        kekakuan = 2
 
     with col2:
         plot_placeholder = st.empty()
