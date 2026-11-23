@@ -65,10 +65,10 @@ def page_earthquake():
         kekakuan = 10
     elif material == "Beton Bertulang (Standar Gedung Modern)":
         damping = 0.07
-        kekakuan = 5
+        kekakuan = 7.5
     else:
         damping = 0.25
-        kekakuan = 2
+        kekakuan = 3.5
 
     with col2:
         plot_placeholder = st.empty()
